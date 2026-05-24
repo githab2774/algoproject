@@ -12,8 +12,8 @@ body {
 
 .container {
   max-width: 800px;
-  margin: 0 0 0 20px; /* Прижато к левому краю с небольшим отступом */
-  padding: 40px 0; /* Отступы сверху/снизу */
+  margin: 0 0 0 20px;
+  padding: 40px 0;
 }
 
 .title {
@@ -23,32 +23,42 @@ body {
   color: white;
 }
 
+.image-placeholder {
+  width: 100%;
+  height: 200px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
 .content-grid {
   display: flex;
-  gap: 990px;
-  margin-bottom: 201px;
+  gap: 40px;
+  margin-bottom: 40px;
+  width: 150%; /* Явно задаём ширину контейнера */
 }
 
 .card {
-  height: 540px;
+  height: 250px;
   background-color: #f0f0f0;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 2.5rem;
   font-weight: bold;
 }
 
-/* Блок «сюжет» (слева) */
-/* Блок «сюжет» (слева) */
 .selected {
-  flex: 1 1 45%;         /* Только flex */
+  flex: 0 0 55%; /* Жёсткая ширина 45 %, без роста/сжатия */
+  border: 3px solid #00a8ff;
 }
 
-/* Блок «видео» (справа) */
 .card:not(.selected) {
-  flex: 1 1 55%; /* flex-grow: 1, flex-shrink: 1, flex-basis: 55% */
+  flex: 0 0 55%; /* Жёсткая ширина 55 %, без роста/сжатия */
   margin-left: auto;
 }
 
@@ -75,14 +85,4 @@ body {
 .btn:hover {
   background-color: #221010;
   transform: translateY(-2px);
-}
-.image-placeholder {
-  width: 100%;
-  height: 2000px;
-  background-color: #f0f0f0;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 100px; /* Увеличили отступ до 80 px */
 }
