@@ -1,0 +1,91 @@
+pod
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', monospace; /* Шрифт под линованную бумагу */
+  background-color: #8B0000; /* Красный фон как на картинке */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.notebooks {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.notebook {
+  width: 30%;
+  height: 200px;
+  background-color: #f0f0f0;
+  border-left: 5px dashed #ff0000;
+  border-right: 5px dashed #ff0000;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.tape {
+  width: 50px;
+  height: 15px;
+  background-color: #553300;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.content {
+  padding: 20px;
+  line-height: 1.6;
+  font-size: 14px;
+  text-align: left;
+}
+
+.blood-splatter {
+  width: 80px;
+  height: 80px;
+  background-color: #ff0000;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  border-radius: 50%;
+  z-index: 0;
+  transform: rotate(45deg);
+  opacity: 0.8;
+  filter: blur(5px);
+}
+
+/* Эффект брызг (можно добавить больше слоев для объема) */
+.notebook:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  right: 10px;
+  bottom: 10px;
+  opacity: 0.5;
+}
