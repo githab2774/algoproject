@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивные сюжеты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <a href="../Cyjet/Plotsss.html" class="story active" data-story="1">СЮЖЕТ 1</a>
+        <a href="story2.html" class="story" data-story="2">СЮЖЕТ 2</a>
+        <a href="story3.html" class="story" data-story="3">СЮЖЕТ 3</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="content">
+
+        <div class="image-block" id="imageBlock">
+            <img id="storyImage" src="" alt="Изображение сюжета" style="display: none;">
+            <div id="placeholderText">Выберите сюжет из меню слева</div>
+        </div>
+
+        <div class="description" id="description">
+            Здесь появится описание выбранного сюжета
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
