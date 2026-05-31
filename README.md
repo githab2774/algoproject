@@ -1,4 +1,4 @@
-<img src="https://avatars.mds.yandex.net/i?id=dd46a542a0321ad499e3675cd39ddcb6_l-9103996-images-thumbs&n=13" width="600" height="150">
+<img src="https://avatars.mds.yandex.net/i?id=dd46a542a0321ad499e3675cd39ddcb6_l-9103996-images-thumbs&n=13" width="900" height="250">
  # Glorious Adventure
 
 ## Glorious Adventure - это наша командная проектная работа. Мы решили сделать небольшую браузерную игру и заодно получить опыт работы над одним проектом вместе.
